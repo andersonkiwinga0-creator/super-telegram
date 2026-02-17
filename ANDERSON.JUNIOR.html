@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMOJA HIGH SCHOOL</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #0baa48;
+        }
+
+        header {
+            background-color: #0d47a1;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header img {
+            width: 80px;
+            display: block;
+            margin: 0 auto 10px;
+        }
+
+        nav {
+            background-color: #1565c0;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0, 0.1);
+        }
+
+        form {
+            max-width: 500px;
+            margin: auto;
+            text-align: left;
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0, 0.1);
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #0d47a1;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #1565c0;
+        }
+
+        footer {
+            background-color: #0d47a1;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="logo.png" alt="school logo">
+        <h1>
+            Umoja High School
+        </h1>
+        <p>
+            Education for Excellence
+        </p>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#academics">Academics</a>
+        <a href="#admission">Admission</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="home">
+        <h2>
+            Welcome to Umoja High School
+        </h2>
+        <P>
+            We provide quality education and nurture future leaders.
+        </P>
+    </section>
+    <section id="about">
+        <h2>
+            About US
+        </h2>
+        <P>
+            Umoja High School is committed to academic Excellence, discpline, and innovation.
+        </P>
+    </section>
+    <section id="Academics">
+        <h2>
+            Our Programs
+        </h2>
+        <div class="card-container">
+            <div class="card">
+                <h3>
+                    Sciences
+
+                </h3>
+                <p>
+                    Biology, Chemistry, Physics
+                </p>
+
+            </div>
+            <div class="card">
+                <h3>
+                    Humanities
+                </h3>
+                <p>
+                    History, Geography, CRE
+                </p>
+
+            </div>
+            <div class="card">
+                <h3>Technology</h3>
+                <p>Computer Studies & ICT</p>
+            </div>
+
+        </div>
+
+    </section>
+    <section id="Admission">
+        <h2>Admission FORM</h2>
+        <form onsubmit="submitForm(event)">
+            <label>Full Name</label>
+            <input type="text" required>
+            <label>Gender</label>
+            <select required>
+                <option value="">select Gender</option>
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+            <label>Date Of Birth</label>
+            <input type="date" required>
+            <label>Parent Phone Number</label>
+            <input type="tel" required>
+            <button type="submit">Submit Application </button>
+        </form>
+    </section>
+    <section id="Contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@umojahigh.ac.ke</p>
+        <p>phone: 0746448789</p>
+        <p>Location: Nakuru,west Kenya</p>
+    </section>
+    <footer>
+        <p>
+            &copy; 2026 Umoja High School. All Rights Reserved.
+
+        </p>
+    </footer>
+    <script>
+        function submitForm(event) {
+            event.preventDefault();
+            alert("Application submitted successfully!");
+        }
+    </script>
+</body>
+
+</html>
